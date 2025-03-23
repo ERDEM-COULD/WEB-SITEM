@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erdem | Portföy</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1><span>Erdem</span></h1>
+            <ul>
+                <li><a href="#about">Hakkımda</a></li>
+                <li><a href="#skills">Yetenekler</a></li>
+                <li><a href="#projects">Projeler</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+            <button id="dark-mode-toggle">🌙</button>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Merhaba, ben <span>Erdem</span></h2>
+            <p>Web geliştirici & teknoloji tutkunu</p>
+            <a href="#projects" class="btn">Projelerime Göz At</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Hakkımda</h2>
+        <p>Ben Erdem. Web geliştirme ve yazılım dünyasında kendimi sürekli geliştiriyorum. Modern, performanslı ve şık web siteleri tasarlıyorum.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Yetenekler</h2>
+        <div class="skill-list">
+            <div class="skill">HTML & CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Node.js</div>
+            <div class="skill">React</div>
+            <div class="skill">MongoDB</div>
+        </div>
+    </section>
+<!-- Mesaj kutusu -->
+<div id="message-container">
+    <p id="message-text"></p>
+    <p id="redirect-text"></p>
+</div>
+
+
+
+    <section id="projects">
+        <h2>Projelerim</h2>
+        <div class="project">
+            <h3><a href="https://erdem-could.github.io/YAS-HESAPLAMA/" target="_blank">Yaş Hesaplama</a></h3>
+        </div>
+        <div class="project">
+            <h3><a href="https://erdem-could.github.io/MAP/" target="_blank">Map</a></h3>
+        </div>
+        <div class="project">
+            <h3><a href="https://erdem-could.github.io/SAYI-TAHM-N-OYUNU/" target="_blank">Sayı Tahmin Oyunu</a></h3>
+        </div>
+        <div class="project">
+            <h3><a href=" https://erdem-could.github.io/FLY-BIRD/" target="_blank">Fly Bird</a></h3>
+        </div>
+        <div class="project">
+            <h3><a href="https://erdem-could.github.io/HAVA-DURUMU/" target="_blank">Hava Durumu</a></h3>
+        </div>
+    </section>
+    <section id="vote-section">
+        <h2>Bu sayfayı beğendiniz mi?</h2>
+        <button id="like-button">👍 Beğen <span id="like-count">0</span></button>
+        <button id="dislike-button">👎 Beğenme</button>
+    </section>
+    <footer>
+        <p>© 2025 Erdem | Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <!-- Şikayet/Öneri Butonu -->
+    <button id="feedback-button" onclick="window.location.href='http://192.168.1.35:3000'">Şikayet/Öneri</button>
+
+</body>
+</html>

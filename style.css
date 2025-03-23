@@ -1,0 +1,260 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1976D2; /* Koyu Mavi Arka Plan */
+    color: #ffffff; /* Yazı rengini beyaz yapalım */
+    transition: background 0.3s ease;
+}
+
+header {
+    background: #333;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#dark-mode-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('img/hero-bg.jpg') no-repeat center center/cover;
+}
+
+.hero-content {
+    color: white;
+}
+
+.hero-content h2 span {
+    color: #ffcc00;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffcc00;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #e6b800;
+}
+
+section {
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#projects {
+    background: #1976D2; /* Koyu Mavi Arka Plan */
+    padding: 30px;
+    border-radius: 8px;
+}
+
+#projects h2 {
+    color:#ffcc00; /* Sarı başlık */
+}
+
+.project {
+    background: transparent;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project h3 {
+    color: #ffcc00; /* Sarı başlık */
+    cursor: pointer;
+    text-decoration: underline; /* Tıklanabilir görünüm */
+}
+
+.project a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.project a:hover {
+    color: #ffffff; /* Hoverda daha açık sarı */
+}
+
+/* Dark mode özelliği */
+.dark-mode {
+    background: #222;
+    color: white;
+}
+
+.dark-mode #projects {
+    background: #333; /* Siyah arka plan */
+}
+
+.dark-mode #projects h2 {
+    color: white; /* Beyaz başlık */
+}
+
+.dark-mode .project h3 {
+    color: white; /* Beyaz başlık */
+}
+
+.dark-mode .project a {
+    color: white; /* Beyaz linkler */
+}
+
+.dark-mode .project a:hover {
+    color: #ffea00; /* Hoverda sarı renk */
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+#feedback-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffcc00; /* Sarı Arka Plan */
+    color: black;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#feedback-button:hover {
+    background-color: #e6b800; /* Hoverda daha koyu sarı */
+}
+
+#feedback-button:active {
+    background-color: #cc9900; /* Tıklanırken daha da koyu sarı */
+}
+/* Yetenekler başlığının rengi sarı */
+#skills h2 {
+    color: #ffcc00; /* Sarı renk */
+}
+
+/* Yetenekler içeriğinin rengi sarı */
+#skills p {
+    color: #ffcc00; /* Sarı renk */
+}
+/* Hakkımda başlığının rengi sarı */
+#about h2 {
+    color: #ffcc00; /* Sarı renk */
+}
+
+/* Hakkımda içeriğinin rengi sarı */
+#about p {
+    color: #ffffff; /* Sarı renk */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1976D2;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+#vote-section {
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#like-button {
+    background-color: white;
+}
+
+#dislike-button {
+    background-color: white;
+}
+
+#like-button:hover {
+    background-color: #e0e0e0;
+}
+
+#dislike-button:hover {
+    background-color: #e0e0e0;
+}
+#message-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Ekranın ortasına yerleştir */
+    font-size: 40px; /* Yazı boyutunu büyük yapalım */
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.7); /* Arka plan biraz opak olacak */
+    padding: 20px;
+    border-radius: 10px;
+    display: none; /* Başlangıçta gizli */
+    z-index: 1000; /* Diğer öğelerin üstünde görünmesini sağlamak için */
+    transition: opacity 0.3s ease; /* Fade in-out animasyonu */
+}
+
+#message-container p {
+    margin: 0;
+}
+
+#redirect-text {
+    font-size: 18px; /* Küçük yazı boyutu */
+    color: #f0f0f0; /* Açık renk */
+}
